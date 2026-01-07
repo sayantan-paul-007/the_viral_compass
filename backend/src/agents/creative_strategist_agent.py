@@ -1,7 +1,7 @@
 #This agent is base code from Kaggle about creative strategy using Gemini.
 from google.adk.models.google_llm import Gemini
 from google.adk.agents import LlmAgent
-from backend.src.retry_config import retry_config
+from retry_config import retry_config
 creative_strategist_agent = LlmAgent(
     name="creative_strategist_agent",
     model=Gemini(

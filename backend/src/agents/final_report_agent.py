@@ -1,6 +1,6 @@
 from google.adk.models.google_llm import Gemini
 from google.adk.agents import LlmAgent
-from backend.src.retry_config import retry_config
+from retry_config import retry_config
 final_report_agent = LlmAgent(
     name="final_report_agent",
     model=Gemini(

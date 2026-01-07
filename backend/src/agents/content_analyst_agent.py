@@ -1,8 +1,8 @@
 from google.adk.models.google_llm import Gemini
 from google.adk.agents import LlmAgent
-from backend.src.tools.extract_and_analyze_video_frames import extract_and_analyze_video_frames
-from backend.src.tools.extract_and_analyze_audio import extract_and_analyze_audio
-from backend.src.retry_config import retry_config
+from tools.extract_and_analyze_video_frames import extract_and_analyze_video_frames
+from tools.extract_and_analyze_audio import extract_and_analyze_audio
+from retry_config import retry_config
 content_analyst_agent = LlmAgent(
     name="content_analyst_agent",
     model=Gemini(
